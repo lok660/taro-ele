@@ -22,7 +22,12 @@ const config = {
     resource: path.join(__dirname, '../src/assets/styles/index.scss'),
   },
   alias: {
-    '@/': path.resolve(__dirname, '..', 'src/'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/redux': path.resolve(__dirname, '..', 'src/redux'),
+    '@/api': path.resolve(__dirname, '..', 'src/api'),
+    '@/hooks': path.resolve(__dirname, '..', 'src/hooks'),
+    '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
   },
   framework: 'react',
   mini: {

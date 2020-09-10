@@ -19,14 +19,19 @@
     "jsxFactory": "React.createElement",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "global.d.ts"
-    ]
+    "typeRoots": ["node_modules/@types", "global.d.ts"]
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/redux/*": ["./src/redux/*"],
+      "@/api/*": ["./src/api/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
   "compileOnSave": false
 }
