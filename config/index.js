@@ -18,6 +18,12 @@ const config = {
     options: {
     }
   },
+  sass: {
+    resource: path.join(__dirname, '../src/assets/styles/index.scss'),
+  },
+  alias: {
+    '@/': path.resolve(__dirname, '..', 'src/'),
+  },
   framework: 'react',
   mini: {
     postcss: {
